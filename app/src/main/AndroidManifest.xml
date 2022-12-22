@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.dinesh.sqlite">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -22,6 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".test.android_lifecycle.a.MainActivity"/>
+        <activity android:name=".test.android_lifecycle.View_model.MainActivity"/>
+        <activity android:name=".test.android_lifecycle.live_data.MainActivity"/>
+        <activity android:name=".android_lifecycle.room.MainActivity"/>
+        <activity android:name=".android_lifecycle.room.NewNoteActivity"/>
+        <activity android:name=".test.room_test.MainActivity"/>
+        <activity android:name=".test.room_test.NewNoteActivity"/>
+
+        <activity android:name=".room.MainActivity"/>
+
     </application>
 
 </manifest>

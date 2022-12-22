@@ -2,14 +2,12 @@ package com.dinesh.sqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -20,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = new Intent(MainActivity.this, com.dinesh.sqlite.room.MainActivity.class);
+//        Intent intent = new Intent(MainActivity.this, com.dinesh.sqlite.test.android_lifecycle.live_data.MainActivity.class);
+        startActivity(intent);
+
 
         //Save the data using shared preferences
         SharedPreferences saveData = getSharedPreferences("DataBase", MODE_PRIVATE);
